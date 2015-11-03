@@ -11,8 +11,8 @@ require 'temperature'
 # The name should describe what is being tested.
 class TestTemperature < MiniTest::Test
   def test_ftoc_converts_freezing_temperature
-    assert_equal 0, ftoc(32)
-  end
+    assert_equal 0, ftoc(32) 
+    end
 
   def test_ftoc_converts_boiling_temperature
     assert_equal 100, ftoc(212)
@@ -23,7 +23,7 @@ class TestTemperature < MiniTest::Test
   end
 
   def test_ftoc_convers_arbitrary_temperature
-    assert_equal 20, ftoc(68)
+    assert_equal 20, ftoc(68) 
   end
 
   # Now this set of tests describes a different method,

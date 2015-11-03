@@ -28,7 +28,7 @@ class TestHello < MiniTest::Test
     # In hello.rb:
     #
     # def hello
-    #   "Hello!"
+    #   "Hello!"subl
     # end
   end
 
@@ -36,11 +36,11 @@ class TestHello < MiniTest::Test
 
 # But hold on there cowboy, we got another test right in front of us now.
 
-  def test_says_hello_to_someone
+  def test_says_hello_to_someone(greet)
     assert_equal "Hello, Alice!", greet("Alice")
   end
 
-  def test_says_hello_to_someone_else
+  def test_says_hello_to_someone
     assert_equal "Hello, Bob!", greet("Bob")
   end
 
